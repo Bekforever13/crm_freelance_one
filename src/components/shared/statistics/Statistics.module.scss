@@ -1,0 +1,63 @@
+.profit_today {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border: 1px solid #ccc;
+	border-radius: 10px;
+	width: 300px;
+
+	.profit {
+		width: 100%;
+		border-radius: 10px 10px 0 0;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		color: #fff;
+		gap: 30px;
+		padding: 20px;
+		background: rgb(200, 238, 174);
+		background: radial-gradient(
+			circle,
+			rgba(200, 238, 174, 1) 0%,
+			rgba(151, 233, 148, 1) 50%
+		);
+		border-bottom: 1px solid #acacac;
+		span {
+			font-size: 30px;
+		}
+
+		div {
+			h4 {
+				margin: 0;
+				font-size: 14px;
+				font-weight: bold;
+				text-align: center;
+			}
+
+			h2 {
+				font-size: 36px;
+				font-weight: 600;
+				text-align: center;
+			}
+		}
+	}
+	.check {
+		display: flex;
+		justify-content: space-between;
+		padding: 10px 20px;
+		width: 100%;
+		border: none;
+		border-radius: 0 0 10px 10px;
+		cursor: pointer;
+		font-size: 16px;
+		opacity: 0.5;
+		transition: all 0.3s;
+
+		&:hover {
+			opacity: 0.9;
+		}
+		svg {
+			font-size: 20px;
+		}
+	}
+}
